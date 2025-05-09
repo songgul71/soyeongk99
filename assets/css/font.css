@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/* 산토끼체 */
+@font-face {
+  font-family: 'another_font';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 런드리고딕 */
+@font-face {
+  font-family: 'name_font';
+  src: url('../font/런드리고딕\ Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 프리텐다드 */
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Thin.woff2) format('woff2'),
+        url(../font/Pretendard-Thin.woff) format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Light.woff2) format('woff2'),
+        url(../font/Pretendard-Light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Regular.woff2) format('woff2'),
+        url(../font/Pretendard-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Medium.woff2) format('woff2'),
+        url(../font/Pretendard-Medium.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-SemiBold.woff2) format('woff2'),
+        url(../font/Pretendard-SemiBold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Bold.woff2) format('woff2'),
+        url(../font/Pretendard-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
