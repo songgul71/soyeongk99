@@ -1,14 +1,16 @@
 @charset "utf-8";
 
 /* design_font */
+
 @font-face {
-    font-family: 'Aesthetic Moment';
-    src: url('../font/AestheticMomentItalic.woff2') format('woff2'),
-        url('../font/AestheticMomentItalic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
+    font-family: 'AestheticMoment';
+    src: url(../font/AestheticMomentItalic.woff2) format('woff2'),
+        url(../font/AestheticMomentItalic.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
     font-display: swap;
 }
+
 
 /* nomal_font */
 @font-face {
