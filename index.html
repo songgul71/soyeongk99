@@ -33,20 +33,6 @@
 
 <body class="index-page">
 
-  <!-- <div class="pop_up">
-    <dl>
-      <dt>알림 아이콘</dt>
-      <dd>
-        아직 오픈되지 않은 실무 프로젝트들은
-        <br>
-        공개하기 조심스러워 첨부하지 않았습니다.
-      </dd>
-
-      <dd class="muted">오픈되면 업로드 하겠습니다. 감사합니다.</dd>
-      <dd class="bi bi-x close" aria-label="닫기"></dd>
-    </dl>
-  </div> -->
-
   <header id="header" class="header d-flex align-items-center fixed-top">
 
     <nav id="navmenu" class="navmenu">
@@ -462,6 +448,39 @@
     <i class="bi bi-arrow-up-short"></i>
   </a>
 
+  <div class="pop_up">
+    <dl>
+      <dt>알림 아이콘</dt>
+      <dd>
+        아직 오픈되지 않은 실무 프로젝트들은
+        <br>
+        공개하기 조심스러워 첨부하지 않았습니다.
+      </dd>
+
+      <dd class="muted">오픈되면 업로드 하겠습니다. 감사합니다.</dd>
+      <dd class="bi bi-x close" aria-label="닫기"></dd>
+    </dl>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const popup = document.querySelector(".pop_up");
+      if (!popup) return;
+
+      if (!sessionStorage.getItem("popupShown")) {
+        popup.classList.add("show"); // ← display block 대신 클래스 토글
+        sessionStorage.setItem("popupShown", "true");
+      }
+
+      const closeBtn = popup.querySelector(".close");
+      if (closeBtn) {
+        closeBtn.addEventListener("click", function () {
+          popup.classList.remove("show");
+        });
+      }
+    });
+  </script>
+
   <!-- Preloader -->
   <div id="preloader"></div>
 
@@ -542,7 +561,6 @@
       new TypingEffect();
     });
   </script>
-
 
 </body>
 
