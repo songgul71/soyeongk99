@@ -209,6 +209,24 @@ body{position: relative;}
   transform: scale(1);
 }
 
+@media (max-width:1090px) {
+  .pop_up dl{ width: 50%; }
+}
+@media (max-width:1090px) {
+  .pop_up dd.close { top: -4%; }
+  .pop_up dd {font-size:18px; margin-top: 20px;}
+}
+@media (max-width:680px) {
+  .pop_up dl{ width: 80%; padding: 30px 12px 20px; height: auto;}
+  .pop_up dd.close { top: -6%; font-size: 2.4rem; }
+  .pop_up dt{ display: none;}
+  .pop_up dd {font-size: 16px;}
+}
+@media (max-width:460px) {
+  .pop_up dl{ padding: 30px 6px 20px;}
+  .pop_up dd {font-size: 14px;}
+}
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
